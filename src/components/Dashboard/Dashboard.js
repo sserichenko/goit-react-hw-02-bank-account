@@ -34,7 +34,7 @@ export default class Dashboard extends Component {
   };
 
   onWithdraw = am => {
-    if (Number(am) === 0) {
+    if (Number(am) === 0 || Number(am) < 0) {
       return toast.warn('Введите сумму для проведения операции !', {
         position: toast.POSITION.TOP_RIGHT,
       });
