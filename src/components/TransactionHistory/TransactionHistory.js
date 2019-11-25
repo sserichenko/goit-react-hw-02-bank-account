@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './TransactionHistory.module.css';
@@ -31,7 +30,7 @@ TransactionHistory.propTypes = {
     PropTypes.shape({
       id: PropTypes.string,
       type: PropTypes.string,
-      amount: PropTypes.string,
+      amount: PropTypes.number,
       date: PropTypes.string,
     }),
   ).isRequired,
